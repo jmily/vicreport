@@ -43,7 +43,7 @@ class ReportRepository
         $link = Database::DbConnection();
         $query = "SELECT * FROM `reports`
                   INNER JOIN `report_status` ON `reports`.`report_status_id` = `report_status`.`report_status_id`
-                  INNER JOIN `report_types` ON `reports`.`report_type_id` = `report_types`.`report_type_id`";
+                  INNER JOIN `report_types` ON `reports`.`report_type_id` = `report_types`.`report_type_id` ORDER BY `report_id`";
         $result = $link->query($query) or die($link->error.__LINE__);
 
         while($row = $result->fetch_assoc())

@@ -34,7 +34,7 @@ class JsonGenerator
                      "type": "Feature",
                      "properties" :
                      {
-                         "popupContent": "'.$report->getDescription().'",
+                         "popupContent": "'.trim($report->getDescription()).'",
                          "popupStatus": "'.$report->getReportStatus().'",
                          "popupCreateAt": "'.$prettyDate.'"
                      },

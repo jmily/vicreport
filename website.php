@@ -95,9 +95,7 @@ require_once 'model/ReportRepository.php';
             height:auto;
             z-index:999;
         }
-        #map{
-            min-height: 800px;
-        }
+
 
         #report
         {
@@ -129,6 +127,11 @@ require_once 'model/ReportRepository.php';
         {
 
             opacity: 0;
+        }
+
+        .leaflet-popup
+        {
+            min-height:356px;
         }
 
         .down-button
@@ -382,6 +385,10 @@ require_once 'model/ReportRepository.php';
     })(jQuery);
 </script>
 <script>
+    $(document).ready(function()
+    {
+
+
    // var map = L.map('map').setView([-37.831180, 145.009731], 10);
    var map = L.map('map',{
        center: [-37.831180, 145.009731],
@@ -401,12 +408,15 @@ require_once 'model/ReportRepository.php';
 
 
 
+
+
+
     function onEachFeature(feature, layer) {
         var popupContent = "<img class=\"lazy-image\" src =\"getImage.php?id="+feature.id+"\" width=\"300px;\"><br>";
         if (feature.properties && feature.properties.popupContent) {
-            popupContent += "<div class=\"description\" ><br>Created at "+feature.properties.popupCreateAt+"<span class=\"status\">Status: "+feature.properties.popupStatus+"</span><h5>Description</h5>"+feature.properties.popupContent+"</div>";
+            popupContent += "<div class=\"description\" ><br>Created at "+feature.properties.popupCreateAt+"&nbsp;&nbsp;<span class=\"status\">Status: "+feature.properties.popupStatus+"</span><h5>Description</h5>"+feature.properties.popupContent+"</div>";
         }
-        layer.bindPopup(popupContent);
+        layer.bindPopup(popupContent).openPopup();
     }
 
     L.geoJson([bicycleRental], {
@@ -419,23 +429,36 @@ require_once 'model/ReportRepository.php';
 
         pointToLayer: function (feature, latlng) {
 
-            var fillColor = "#ff7800";
-            var className = "created";
+            var redIcon = L.icon({
+                iconUrl: 'images/pin_red.png',
+                popupAnchor: [-3, -76],
+                iconSize: [25,25]
+            });
+
+            var blackIcon = L.icon({
+                iconUrl: 'images/pin_black.png',
+                popupAnchor: [-3, -76]
+            });
+
+            var icon = redIcon;
+
             if(feature.properties.popupStatus == 'Solved')
             {
-                fillColor = "#5cb85c";
-                className = "solved";
+                icon = blackIcon;
             }
-            return L.circleMarker(latlng, {
-                radius: 6,
-                fillColor: fillColor,
-                color: "#fff",
-                border:"none",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8,
-                className: className
-            });
+
+            return L.marker(latlng, {icon: icon});
+
+//            return L.circleMarker(latlng, {
+//                radius: 6,
+//                fillColor: fillColor,
+//                color: "#fff",
+//                border:"none",
+//                weight: 1,
+//                opacity: 1,
+//                fillOpacity: 0.8,
+//                className: className
+//            });
         }
     }).addTo(map)
         .on('ready',finishedLoading);
@@ -460,6 +483,8 @@ require_once 'model/ReportRepository.php';
             loader.className = 'hide';
         }, 500);
     }
+
+    });
 </script>
 
 <script>
