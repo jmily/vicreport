@@ -1,0 +1,265 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+
+.leaflet-popup
+{
+    color:#333;
+}
+.solved-row
+{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color:#fff;
+}
+
+.navbar-inner
+{
+    background-color: #3b3b41;
+    height:40px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    height:40px;
+    padding:10px 15px 15px 0;
+}
+
+body
+{
+    background: #333;
+    color: #eee;
+    font-size: 34px;
+    font-family: "Open Sans";
+
+}
+
+.navbar.navbar-inverse
+{
+    min-height:40px;
+}
+
+.report-heading
+{
+    border-bottom: 1px solid #eee;
+    height: 30px;
+}
+.report-heading-text
+{
+    font-weight: 900;
+    font-size:20px;
+}
+.report-icon
+{
+    margin-right: 5px;
+
+}
+
+.report
+{
+    margin-top:1%;
+}
+
+.datatable-search
+{
+   width: 150px;
+    height:25px;
+}
+.show-map
+{
+    padding-top:15px;
+    cursor: pointer;
+}
+
+.show-map a
+{
+    color:#333;
+    text-decoration: none;
+}
+
+
+.footer
+{
+    position:absolute; bottom:0; width:100%; z-index:1208; height:50px; background-color:#3b3b41;
+}
+.show-report
+{
+    padding-top:10px;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.show-report a
+{
+   color:white;
+    text-decoration: none;
+}
+.show-map-icon
+{
+    margin-right: 5px;
+}
+
+.content
+{
+    color:#888;
+    background-color: #f4f4f4;
+    font-family: "FontAwesome";
+    font-size: 13.5px;
+}
+
+
+
+.loader.done {
+    background:rgba(255, 255, 255, 0);
+}
+.loader.hide {
+    display:none;
+}
+.loader .message {
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+
+#loader {
+    background: #333;
+    color: #eee;
+    font-size: 34px;
+    font-family: "Open Sans";
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -125px;
+}
+#loader div {
+    display: inline;
+    margin: -2px;
+}
+
+.l {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.o {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 0.21875s;
+    animation-delay: 0.21875s;
+}
+
+.a {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 0.4375s;
+    animation-delay: 0.4375s;
+}
+
+.d {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 0.65625s;
+    animation-delay: 0.65625s;
+}
+
+.i {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 0.875s;
+    animation-delay: 0.875s;
+}
+
+.n {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 1.09375s;
+    animation-delay: 1.09375s;
+}
+
+.g {
+    -webkit-animation: shrinkgrow 1.75s ease-in-out infinite;
+    animation: shrinkgrow 1.75s ease-in-out infinite;
+    -webkit-animation-delay: 1.3125s;
+    animation-delay: 1.3125s;
+}
+
+@-webkit-keyframes shrinkgrow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    12.5% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    33% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes shrinkgrow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    12.5% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    33% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.status
+{
+    padding-left: 20%;
+}
+
+#control
+{
+    position: absolute;
+    top: 20px;
+    color: black;
+    right: 20px;
+    background-color: white;
+    opacity: .9;
+    width: 280px;
+    z-index: 2;
+    height: 300px;
+    text-align: center;
+    line-height: 1.4em;
+    border-radius: 8px;
+    font-size:12px;
+    font-weight:300;
+    text-align: left;
+}
+#check-status
+{
+    padding: 20px;
+}
