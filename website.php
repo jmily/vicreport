@@ -75,6 +75,7 @@ require_once 'model/ReportRepository.php';
         }
         .about
         {
+
             font-size: 18px;
             line-height: 1.6em;
             color: #777;
@@ -90,6 +91,7 @@ require_once 'model/ReportRepository.php';
             height:300px;
 
         }
+
 
         #maps{
             height:auto;
@@ -165,6 +167,7 @@ require_once 'model/ReportRepository.php';
         {
             color:#777;
             margin-top:5%;
+            margin-bottom: 2%;
         }
         .title .first-letter
         {
@@ -229,15 +232,15 @@ require_once 'model/ReportRepository.php';
                <hr class="text-center">
            </div>
 
-           <div class="col-xs-6 text-left about">
+           <div class="row">
+               <div class="col-xs-6 text-left about">
+                       Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damages signs, signal malfunction, unsafe locations, crashes, near-crashes, etc.
 
-                   Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damages signs, signal malfunction, unsafe locations, crashes, near-crashes, etc.
+                       <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes for now.
+                       <br><br>This is a beta version.
 
-                   <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes for now.
-                   <br><br>This is a beta version.
-
-           </div>
-           <div class="col-xs-6 about-bg">
+               </div>
+               <div class="col-xs-6 about-bg"></div>
                </div>
        </div>
        </section>
