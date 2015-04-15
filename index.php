@@ -194,13 +194,13 @@ require_once 'model/ReportRepository.php';
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?><b>Victoria Connect</b></a>
+               <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>>Victoria Connect</a>
            </div>
            <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav navbar-right">
-                   <li><a class="btn nav-link" href="#about">ABOUT</a></li>
-                   <li><a class="btn nav-link" href="#maps">MAP</a></li>
-                   <li><a class="btn nav-link" href="#report">REPORTS</a></li>
+                   <li><a class="btn nav-link" href="#about">About</a></li>
+                   <li><a class="btn nav-link" href="#maps">Map</a></li>
+                   <li><a class="btn nav-link" href="#report">Reports</a></li>
                </ul>
            </div><!--/.nav-collapse -->
        </div>
@@ -209,13 +209,13 @@ require_once 'model/ReportRepository.php';
           <div class="container">
               <div class="jumbotron text-center col-xs-12">
                   <h1 class="down-text">
-                      <div class = "first"><strong>Strengthening Citizens</strong></div>
+                      <div class = "first"><strong>Strengthening Citizen</strong></div>
                       <div class = "sub">Engagement with Government</div>
                   </h1>
 
                   <h5 class="space">
-                     <div class="first"> This project is part of the Transport Infrastructure Decision Support Platform</div>
-                      <div class="sub"> being developed at the Institute of Transport Studies, Monash University.</div>
+                     <div class="first"> This is part of the Transport Infrastructure Decision Support Platform</div>
+                      <div class="sub"> being developed at Monash University.</div>
                   </h5>
                   <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
               </div>
@@ -225,15 +225,15 @@ require_once 'model/ReportRepository.php';
    <section id="about">
        <div class="container">
            <div class="col-xs-12 title ">
-               <h1 class="text-center"><b>ABOUT</b>
-			   <hr class="text-center">
+               <h1 class="text-center"><b></b><span class="first-letter">A</span>bout</h1></b>
+               <hr class="text-center">
            </div>
 
            <div class="col-xs-6 text-left about">
 
-                   Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damaged signs, signal malfunctions, unsafe locations, crashes, near-crashes, etc.
+                   Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damages signs, signal malfunction, unsafe locations, crashes, near-crashes, etc.
 
-                   <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes.
+                   <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes for now.
                    <br><br>This is a beta version.
 
            </div>
@@ -256,7 +256,7 @@ require_once 'model/ReportRepository.php';
    <section id="report">
        <div class="container">
            <div class="col-xs-12 title ">
-               <h1 class="text-center"><b>REPORTS</b></h1>
+               <h1 class="text-center"><span class="first-letter">R</span>eports</h1>
                <hr class="text-center">
            </div>
 
