@@ -29,7 +29,7 @@ require_once 'model/ReportRepository.php';
         }
         /*h1*/
         /*{*/
-            /*font-size: 60px;*/
+        /*font-size: 60px;*/
         /*}*/
 
         @media (max-width: 900px) {
@@ -146,9 +146,9 @@ require_once 'model/ReportRepository.php';
         .centered{ float:none; margin:0 auto;}
 
 
-         hr {
-             margin:auto;
-             background-color: #2D4D8D;
+        hr {
+            margin:auto;
+            background-color: #2D4D8D;
         }
 
         section hr {
@@ -184,87 +184,87 @@ require_once 'model/ReportRepository.php';
     </style>
 
 </head>
-   <body>
-   <nav class="navbar navbar-default navbar-fixed-top" id="nav-menu">
-       <div class="container">
-           <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>>Victoria Connect</a>
-           </div>
-           <div id="navbar" class="navbar-collapse collapse">
-               <ul class="nav navbar-nav navbar-right">
-                   <li><a class="btn nav-link" href="#about">About</a></li>
-                   <li><a class="btn nav-link" href="#maps">Map</a></li>
-                   <li><a class="btn nav-link" href="#report">Reports</a></li>
-               </ul>
-           </div><!--/.nav-collapse -->
-       </div>
-   </nav>
-      <header id="header">
-          <div class="container">
-              <div class="jumbotron text-center col-xs-12">
-                  <h1 class="down-text">
-                      <div class = "first"><strong>Strengthening Citizen</strong></div>
-                      <div class = "sub">Engagement with Government</div>
-                  </h1>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="nav-menu">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?><b>Victoria Connect</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="btn nav-link" href="#about">ABOUT</a></li>
+                <li><a class="btn nav-link" href="#maps">MAP</a></li>
+                <li><a class="btn nav-link" href="#report">REPORTS</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<header id="header">
+    <div class="container">
+        <div class="jumbotron text-center col-xs-12">
+            <h1 class="down-text">
+                <div class = "first"><strong>Strengthening Citizens</strong></div>
+                <div class = "sub">Engagement with Government</div>
+            </h1>
 
-                  <h5 class="space">
-                     <div class="first"> This is part of the Transport Infrastructure Decision Support Platform</div>
-                      <div class="sub"> being developed at Monash University.</div>
-                  </h5>
-                  <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
-              </div>
-          </div>
-      </header>
+            <h5 class="space">
+                <div class="first"> This project is part of the Transport Infrastructure Decision Support Platform</div>
+                <div class="sub"> being developed at the Institute of Transport Studies, Monash University.</div>
+            </h5>
+            <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
+        </div>
+    </div>
+</header>
 
-   <section id="about">
-       <div class="container">
-           <div class="col-xs-12 title ">
-               <h1 class="text-center"><b></b><span class="first-letter">A</span>bout</h1></b>
-               <hr class="text-center">
-           </div>
+<section id="about">
+    <div class="container">
+        <div class="col-xs-12 title ">
+            <h1 class="text-center"><b>ABOUT</b>
+                <hr class="text-center">
+        </div>
 
-           <div class="col-xs-6 text-left about">
+        <div class="col-xs-6 text-left about">
 
-                   Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damages signs, signal malfunction, unsafe locations, crashes, near-crashes, etc.
+            Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damaged signs, signal malfunctions, unsafe locations, crashes, near-crashes, etc.
 
-                   <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes for now.
-                   <br><br>This is a beta version.
+            <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes.
+            <br><br>This is a beta version.
 
-           </div>
-           <div class="col-xs-6 about-bg">
-               </div>
-       </div>
-       </section>
+        </div>
+        <div class="col-xs-6 about-bg">
+        </div>
+    </div>
+</section>
 
-   <section id="maps">
-           <div class="col-xs-12 margins">
-<!--               <h1 class="text-left"><span class="first-letter">T</span>he Map</h1>-->
-<!--               <hr class="text-left">-->
-           </div>
+<section id="maps">
+    <div class="col-xs-12 margins">
+        <!--               <h1 class="text-left"><span class="first-letter">T</span>he Map</h1>-->
+        <!--               <hr class="text-left">-->
+    </div>
 
 
-           <div class="map-container" id="map" style="width:100%; height: 600px;">
-           </div>
+    <div class="map-container" id="map" style="width:100%; height: 600px;">
+    </div>
 
-   </section>
-   <section id="report">
-       <div class="container">
-           <div class="col-xs-12 title ">
-               <h1 class="text-center"><span class="first-letter">R</span>eports</h1>
-               <hr class="text-center">
-           </div>
+</section>
+<section id="report">
+    <div class="container">
+        <div class="col-xs-12 title ">
+            <h1 class="text-center"><b>REPORTS</b></h1>
+            <hr class="text-center">
+        </div>
 
-           <div class="report container">
-               <div class="report col-xs-12">
-                   <?php
-                   $tableReport = ReportRepository::getAllTableReport();
-                   $html = '<table id="example" class="display" cellspacing="0" width="100%">
+        <div class="report container">
+            <div class="report col-xs-12">
+                <?php
+                $tableReport = ReportRepository::getAllTableReport();
+                $html = '<table id="example" class="display" cellspacing="0" width="100%">
                  <thead>
                     <tr>
                        <th>Report Type</th>
@@ -275,38 +275,38 @@ require_once 'model/ReportRepository.php';
                     </tr>
                   </thead>';
 
-                   foreach($tableReport as $report)
-                   {
-                       if($report->getReportStatus() == 'Solved')
-                       {
-                           $html .= '<tr class="solved-row">';
-                       }
-                       else if($report->getReportStatus()=='Created')
-                       {
-                           $html .= '<tr class="pending-row">';
-                       }
-                       else
-                       {
-                           $html .= '<tr>';
-                       }
+                foreach($tableReport as $report)
+                {
+                    if($report->getReportStatus() == 'Solved')
+                    {
+                        $html .= '<tr class="solved-row">';
+                    }
+                    else if($report->getReportStatus()=='Created')
+                    {
+                        $html .= '<tr class="pending-row">';
+                    }
+                    else
+                    {
+                        $html .= '<tr>';
+                    }
 
-                       $html .= '
+                    $html .= '
                         <td>'.$report->getReportType().'</td>
                         <td>'.$report->getReportStatus().'</td>
                         <td>'.$report->getDescription().'</td>
                         <td>'.$report->getAddress().'</td>
                         <td>'.$report->getCreateAt().'</td>
                        </tr>';
-                   }
-                   $html .= '</table>';
+                }
+                $html .= '</table>';
 
-                   echo $html;
-                   ?>
-               </div>
+                echo $html;
+                ?>
+            </div>
 
-       </div>
-       </section>
-   </body>
+        </div>
+</section>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="js/classie.js"></script>
@@ -328,7 +328,7 @@ require_once 'model/ReportRepository.php';
             didScroll = false,
             changeHeaderOn = 200;
 
-       // console.log(header);
+        // console.log(header);
 
         function init() {
             window.addEventListener( 'scroll', function( event ) {
@@ -343,7 +343,7 @@ require_once 'model/ReportRepository.php';
             var sy = scrollY();
             //console.log(header);
             if ( sy <= changeHeaderOn ) {
-             //   classie.remove( header, 'navbar-expanded' );
+                //   classie.remove( header, 'navbar-expanded' );
                 classie.remove(downButton,'hide');
                 classie.remove(downText,'hide');
                 classie.add( downButton, 'btn-cus' );
@@ -352,7 +352,7 @@ require_once 'model/ReportRepository.php';
                 classie.remove( downButton, 'btn-cus' );
                 classie.add(downButton,'hide');
                 classie.add(downText,'hide');
-            //    classie.add( header, 'navbar-expanded' );
+                //    classie.add( header, 'navbar-expanded' );
             }
             didScroll = false;
         }
@@ -375,7 +375,7 @@ require_once 'model/ReportRepository.php';
 
             $("a[rel='next']").click(function(e){
                 e.preventDefault();
-               // var to=$(this).parent().parent("section").next().attr("id");
+                // var to=$(this).parent().parent("section").next().attr("id");
                 console.log(to)
                 var to = $('#about').attr("id");
                 $.mPageScroll2id("scrollTo",to);
@@ -389,21 +389,21 @@ require_once 'model/ReportRepository.php';
     {
 
 
-   // var map = L.map('map').setView([-37.831180, 145.009731], 10);
-   var map = L.map('map',{
-       center: [-37.831180, 145.009731],
-       zoom: 10,
-       scrollWheelZoom: false
-   });
-   // startLoading();
+        // var map = L.map('map').setView([-37.831180, 145.009731], 10);
+        var map = L.map('map',{
+            center: [-37.831180, 145.009731],
+            zoom: 10,
+            scrollWheelZoom: false
+        });
+        // startLoading();
 
-    var bicycleRental = <?php $i = new JsonGenerator();
+        var bicycleRental = <?php $i = new JsonGenerator();
      echo $i->jsonGenerate(); ?>
 
-        L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            id: 'examples.map-20v6611k'
-        }).addTo(map);
+            L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                id: 'examples.map-20v6611k'
+            }).addTo(map);
 
 
 
@@ -411,43 +411,43 @@ require_once 'model/ReportRepository.php';
 
 
 
-    function onEachFeature(feature, layer) {
-        var popupContent = "<img class=\"lazy-image\" src =\"getImage.php?id="+feature.id+"\" width=\"300px;\"><br>";
-        if (feature.properties && feature.properties.popupContent) {
-            popupContent += "<div class=\"description\" ><br>Created at "+feature.properties.popupCreateAt+"&nbsp;&nbsp;<span class=\"status\">Status: "+feature.properties.popupStatus+"</span><h5>Description</h5>"+feature.properties.popupContent+"</div>";
-        }
-        layer.bindPopup(popupContent).openPopup();
-    }
-
-    L.geoJson([bicycleRental], {
-
-        style: function (feature) {
-            return feature.properties && feature.properties.style;
-        },
-
-        onEachFeature: onEachFeature,
-
-        pointToLayer: function (feature, latlng) {
-
-            var redIcon = L.icon({
-                iconUrl: 'images/pin_red.png',
-                popupAnchor: [-3, -76],
-                iconSize: [25,25]
-            });
-
-            var blackIcon = L.icon({
-                iconUrl: 'images/pin_black.png',
-                popupAnchor: [-3, -76]
-            });
-
-            var icon = redIcon;
-
-            if(feature.properties.popupStatus == 'Solved')
-            {
-                icon = blackIcon;
+        function onEachFeature(feature, layer) {
+            var popupContent = "<img class=\"lazy-image\" src =\"getImage.php?id="+feature.id+"\" width=\"300px;\"><br>";
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += "<div class=\"description\" ><br>Created at "+feature.properties.popupCreateAt+"&nbsp;&nbsp;<span class=\"status\">Status: "+feature.properties.popupStatus+"</span><h5>Description</h5>"+feature.properties.popupContent+"</div>";
             }
+            layer.bindPopup(popupContent).openPopup();
+        }
 
-            return L.marker(latlng, {icon: icon});
+        L.geoJson([bicycleRental], {
+
+            style: function (feature) {
+                return feature.properties && feature.properties.style;
+            },
+
+            onEachFeature: onEachFeature,
+
+            pointToLayer: function (feature, latlng) {
+
+                var redIcon = L.icon({
+                    iconUrl: 'images/pin_red.png',
+                    popupAnchor: [-3, -76],
+                    iconSize: [25,25]
+                });
+
+                var blackIcon = L.icon({
+                    iconUrl: 'images/pin_black.png',
+                    popupAnchor: [-3, -76]
+                });
+
+                var icon = redIcon;
+
+                if(feature.properties.popupStatus == 'Solved')
+                {
+                    icon = blackIcon;
+                }
+
+                return L.marker(latlng, {icon: icon});
 
 //            return L.circleMarker(latlng, {
 //                radius: 6,
@@ -459,30 +459,30 @@ require_once 'model/ReportRepository.php';
 //                fillOpacity: 0.8,
 //                className: className
 //            });
+            }
+        }).addTo(map)
+            .on('ready',finishedLoading);
+
+        var loadingControl = L.Control.loading({
+            separate: true
+        });
+        map.addControl(loadingControl);
+
+        function startLoading() {
+            loader.className = '';
         }
-    }).addTo(map)
-        .on('ready',finishedLoading);
 
-    var loadingControl = L.Control.loading({
-        separate: true
-    });
-    map.addControl(loadingControl);
-
-    function startLoading() {
-        loader.className = '';
-    }
-
-    function finishedLoading() {
-        // first, toggle the class 'done', which makes the loading screen
-        // fade out
-        loader.className = 'done';
-        setTimeout(function() {
-            // then, after a half-second, add the class 'hide', which hides
-            // it completely and ensures that the user can interact with the
-            // map again.
-            loader.className = 'hide';
-        }, 500);
-    }
+        function finishedLoading() {
+            // first, toggle the class 'done', which makes the loading screen
+            // fade out
+            loader.className = 'done';
+            setTimeout(function() {
+                // then, after a half-second, add the class 'hide', which hides
+                // it completely and ensures that the user can interact with the
+                // map again.
+                loader.className = 'hide';
+            }, 500);
+        }
 
     });
 </script>
