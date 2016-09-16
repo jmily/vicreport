@@ -58,91 +58,44 @@ require_once 'model/ReportRepository.php';
             }
         }
 
-        a
-        {
+        a {
             z-index: 12;
         }
 
-        .margins
-        {
+        .margins {
             margin-top:51px;
         }
 
-        #about
-        {
+        #about {
             height:700px;
 
         }
-        .about
-        {
 
-            font-size: 18px;
-            line-height: 1.6em;
-            color: #777;
-
-        }
-        .about-bg
-        {
-            border-radius: 4px;
-            box-shadow: 5px 5px 2.5px #888888;
-            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/about-section.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height:300px;
-
-        }
-
-
-        #maps{
+        #maps {
             height:auto;
             z-index:999;
         }
 
 
-        #report
-        {
+        #report {
             height:auto;
             background-color: #ECEDF2;
             min-height: 800px;
             padding-bottom:25px;
         }
 
-
-
-        .navbar-default
-        {
+        .navbar-default {
             height: 100px;
             background-color: #2D4D8D;
             height: 40px;
         }
 
-        .navbar-expanded
-        {
-            background-color: #2D4D8D;
-            height: 40px;
-            -webkit-transition: all 0.7s ease;
-            -moz-transition: all 0.7s ease;
-            -o-transition: all 0.7s ease;
-            transition: all 0.7s ease;
-        }
-        .hide
-        {
-
-            opacity: 0;
-        }
-
-        .leaflet-popup
-        {
-            min-height:356px;
-        }
-
-        .down-button
-        {
+        .down-button {
 
             margin-top: 20px;
         }
-        .first
-        {
+
+        .first {
             margin-bottom: 8px;
         }
         .centered{ float:none; margin:0 auto;}
@@ -163,23 +116,17 @@ require_once 'model/ReportRepository.php';
             border: 0;
             border-top: 1px solid #eee;
         }
-        .title
-        {
+        .title {
             color:#777;
             margin-top:5%;
             margin-bottom: 2%;
         }
-        .title .first-letter
-        {
+        .title .first-letter {
             color:#2D4D8D;
 
         }
-        .space
-        {
-            margin-top:20px;
-        }
-        h1
-        {
+
+        h1 {
             font-weight: 900;
         }
 
@@ -223,23 +170,13 @@ require_once 'model/ReportRepository.php';
 
    <section id="about">
        <div class="container">
-           <div class="col-xs-12 title ">
-               <h1 class="text-center"><b></b><span class="first-letter">A</span>bout</h1></b>
-               <hr class="text-center">
-           </div>
-
            <div class="row">
-               <div class="col-xs-6 text-left about">
-                       Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damages signs, signal malfunction, unsafe locations, crashes, near-crashes, etc.
-
-                       <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes for now.
-                       <br><br>This is a beta version.
-
-               </div>
-               <div class="col-xs-6 about-bg"></div>
-               </div>
+               <p style="margin-top:140px; font-size: 28px; line-height: 1.6em;">
+                   Victoria Connect helps Victorian residents make their neighbourhood works better by reporting issues such as potholes, damaged signs, signal malfunction, unsafe locations, crashes, near-crashes, debris on the road, dead animal, etc. Reports are collected and archived at a database hosted at the National eResearch Collaboration Tools and Resources project (Nectar) cloud for research purposes. This is a beta version. We are currently working with city councils in Victoria to improve this service and hopefully roll out the final version of the app. Hang in there for a bit longer.
+               </p>
+           </div>
        </div>
-       </section>
+   </section>
 
    <section id="maps">
            <div class="col-xs-12 margins">
@@ -399,9 +336,10 @@ require_once 'model/ReportRepository.php';
     var bicycleRental = <?php $i = new JsonGenerator();
      echo $i->jsonGenerate(); ?>
 
-        L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             maxZoom: 18,
-            id: 'examples.map-20v6611k'
+            id: 'mapbox.mapbox-streets-v7',
+            accessToken: 'pk.eyJ1IjoiaHlsYXNjYSIsImEiOiJjaXQ1bGlkcmowMGJmMnNsamQ1dmFsNHhqIn0.03A6_DNp4_9hQligu9xaYA'
         }).addTo(map);
 
 
