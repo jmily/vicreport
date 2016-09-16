@@ -38,10 +38,10 @@ require_once 'model/ReportRepository.php';
                 height: 600px;
                 background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/background.jpg');
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
-                background-attachment: fixed;
+                background-size: 1024px 100%;
+                background-position: 50% 0;
+                background-attachment: scroll;
                 z-index:2;
-
             }
         }
 
@@ -51,96 +51,47 @@ require_once 'model/ReportRepository.php';
                 height: 100vh;
                 background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/background.jpg');
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
-                background-attachment: fixed;
+                background-size: 1600px 100%;
+                background-position: 50% 0;
+                background-attachment: scroll;
                 z-index:2;
 
             }
         }
 
-        a
-        {
+        a {
             z-index: 12;
         }
 
-        .margins
-        {
+        .margins {
             margin-top:51px;
         }
 
-        #about
-        {
-            height:700px;
-
-        }
-        .about
-        {
-            font-size: 18px;
-            line-height: 1.6em;
-            color: #777;
-
-        }
-        .about-bg
-        {
-            border-radius: 4px;
-            box-shadow: 5px 5px 2.5px #888888;
-            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/about-section.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height:300px;
-
-        }
-
-        #maps{
+        #maps {
             height:auto;
             z-index:999;
         }
 
 
-        #report
-        {
+        #report {
             height:auto;
             background-color: #ECEDF2;
             min-height: 800px;
             padding-bottom:25px;
         }
 
-
-
-        .navbar-default
-        {
+        .navbar-default {
             height: 100px;
             background-color: #2D4D8D;
             height: 40px;
         }
 
-        .navbar-expanded
-        {
-            background-color: #2D4D8D;
-            height: 40px;
-            -webkit-transition: all 0.7s ease;
-            -moz-transition: all 0.7s ease;
-            -o-transition: all 0.7s ease;
-            transition: all 0.7s ease;
-        }
-        .hide
-        {
-
-            opacity: 0;
-        }
-
-        .leaflet-popup
-        {
-            min-height:356px;
-        }
-
-        .down-button
-        {
+        .down-button {
 
             margin-top: 20px;
         }
-        .first
-        {
+
+        .first {
             margin-bottom: 8px;
         }
         .centered{ float:none; margin:0 auto;}
@@ -161,22 +112,17 @@ require_once 'model/ReportRepository.php';
             border: 0;
             border-top: 1px solid #eee;
         }
-        .title
-        {
+        .title {
             color:#777;
             margin-top:5%;
+            margin-bottom: 2%;
         }
-        .title .first-letter
-        {
+        .title .first-letter {
             color:#2D4D8D;
 
         }
-        .space
-        {
-            margin-top:20px;
-        }
-        h1
-        {
+
+        h1 {
             font-weight: 900;
         }
 
@@ -194,13 +140,13 @@ require_once 'model/ReportRepository.php';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?><b>Victoria Connect</b></a>
+            <a class="navbar-brand" href=<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>>Victoria Connect</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="btn nav-link" href="#about">ABOUT</a></li>
-                <li><a class="btn nav-link" href="#maps">MAP</a></li>
-                <li><a class="btn nav-link" href="#report">REPORTS</a></li>
+                <li><a class="btn nav-link" href="#about">About</a></li>
+                <li><a class="btn nav-link" href="#maps">Map</a></li>
+                <li><a class="btn nav-link" href="#report">Reports</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -209,14 +155,14 @@ require_once 'model/ReportRepository.php';
     <div class="container">
         <div class="jumbotron text-center col-xs-12">
             <h1 class="down-text">
-                <div class = "first"><strong>Strengthening Citizens</strong></div>
+                <div class = "first"><strong>Strengthening Citizen</strong></div>
                 <div class = "sub">Engagement with Government</div>
             </h1>
 
-            <h5 class="space">
-                <div class="first"> This project is part of the Transport Infrastructure Decision Support Platform</div>
-                <div class="sub"> being developed at the Institute of Transport Studies, Monash University.</div>
-            </h5>
+            <h4 class="space">
+                <div class="first"> Beta version. Developed by <a style="color:white; text-decoration: underline" href="http://www.cityxlab.com/">CityX</a>.</div>
+            </h4>
+
             <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
         </div>
     </div>
@@ -224,21 +170,9 @@ require_once 'model/ReportRepository.php';
 
 <section id="about">
     <div class="container">
-        <div class="col-xs-12 title ">
-            <h1 class="text-center"><b>ABOUT</b>
-                <hr class="text-center">
-        </div>
-
-        <div class="col-xs-6 text-left about">
-
-            Victoria Connect helps Victorian residents make their neighborhood works better by reporting issues such as potholes, damaged signs, signal malfunctions, unsafe locations, crashes, near-crashes, etc.
-
-            <br><br>Reports are collected and archived at a database hosted at Monash University for research purposes.
-            <br><br>This is a beta version.
-
-        </div>
-        <div class="col-xs-6 about-bg">
-        </div>
+        <p style="margin-top:140px; margin-bottom: 100px; font-size: 28px; line-height: 1.6em;">
+            Victoria Connect helps Victorian residents make their neighbourhood works better by reporting issues such as potholes, damaged signs, signal malfunction, unsafe locations, crashes, near-crashes, debris on the road, dead animal, etc. Reports are collected and archived at a database hosted at the National eResearch Collaboration Tools and Resources project (Nectar) cloud for research purposes. This is a beta version. We are currently working with city councils in Victoria to improve this service and hopefully roll out the final version of the app. Hang in there for a bit longer.
+        </p>
     </div>
 </section>
 
@@ -256,7 +190,7 @@ require_once 'model/ReportRepository.php';
 <section id="report">
     <div class="container">
         <div class="col-xs-12 title ">
-            <h1 class="text-center"><b>REPORTS</b></h1>
+            <h1 class="text-center"><span class="first-letter">R</span>eports</h1>
             <hr class="text-center">
         </div>
 
@@ -398,11 +332,12 @@ require_once 'model/ReportRepository.php';
         // startLoading();
 
         var bicycleRental = <?php $i = new JsonGenerator();
-     echo $i->jsonGenerate(); ?>
+            echo $i->jsonGenerate(); ?>
 
-            L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 maxZoom: 18,
-                id: 'examples.map-20v6611k'
+                id: 'mapbox.mapbox-streets-v7',
+                accessToken: 'pk.eyJ1IjoiaHlsYXNjYSIsImEiOiJjaXQ1bGlkcmowMGJmMnNsamQ1dmFsNHhqIn0.03A6_DNp4_9hQligu9xaYA'
             }).addTo(map);
 
 
