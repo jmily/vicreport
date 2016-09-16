@@ -216,10 +216,6 @@ require_once 'model/ReportRepository.php';
                       <div class = "sub">Engagement with Government</div>
                   </h1>
 
-                  <h5 class="space">
-                     <div class="first"> This is part of the Transport Infrastructure Decision Support Platform</div>
-                      <div class="sub"> being developed at Monash University.</div>
-                  </h5>
                   <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
               </div>
           </div>
