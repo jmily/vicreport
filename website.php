@@ -38,10 +38,10 @@ require_once 'model/ReportRepository.php';
                 height: 600px;
                 background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/background.jpg');
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
-                background-attachment: fixed;
+                background-size: 1024px 100%;
+                background-position: 50% 0;
+                background-attachment: scroll;
                 z-index:2;
-
             }
         }
 
@@ -51,8 +51,9 @@ require_once 'model/ReportRepository.php';
                 height: 100vh;
                 background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('./images/background.jpg');
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
-                background-attachment: fixed;
+                background-size: 1600px 100%;
+                background-position: 50% 0;
+                background-attachment: scroll;
                 z-index:2;
 
             }
@@ -64,11 +65,6 @@ require_once 'model/ReportRepository.php';
 
         .margins {
             margin-top:51px;
-        }
-
-        #about {
-            height:700px;
-
         }
 
         #maps {
@@ -163,6 +159,10 @@ require_once 'model/ReportRepository.php';
                       <div class = "sub">Engagement with Government</div>
                   </h1>
 
+                  <h4 class="space">
+                      <div class="first"> Beta version. Developed by <a style="color:white; text-decoration: underline" href="http://www.cityxlab.com/">CityX</a>.</div>
+                  </h4>
+
                   <div class="col-xs-1 centered"><a class="btn-cus down-button" href="#" rel="next"><i class="fa fa-chevron-circle-down fa-3x"></i></a></div>
               </div>
           </div>
@@ -170,11 +170,9 @@ require_once 'model/ReportRepository.php';
 
    <section id="about">
        <div class="container">
-           <div class="row">
-               <p style="margin-top:140px; font-size: 28px; line-height: 1.6em;">
+               <p style="margin-top:140px; margin-bottom: 100px; font-size: 28px; line-height: 1.6em;">
                    Victoria Connect helps Victorian residents make their neighbourhood works better by reporting issues such as potholes, damaged signs, signal malfunction, unsafe locations, crashes, near-crashes, debris on the road, dead animal, etc. Reports are collected and archived at a database hosted at the National eResearch Collaboration Tools and Resources project (Nectar) cloud for research purposes. This is a beta version. We are currently working with city councils in Victoria to improve this service and hopefully roll out the final version of the app. Hang in there for a bit longer.
                </p>
-           </div>
        </div>
    </section>
 
